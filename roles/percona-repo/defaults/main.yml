@@ -1,0 +1,4 @@
+---
+# defaults file for percona-repo
+- name: Install Percona Toolkit
+  yum: name=percona-toolkit state=present

@@ -1,0 +1,8 @@
+---
+# tasks file for percona-repo
+- name: Copy the Percona repository definition
+  copy: src=percona-release.repo  dest=/etc/yum.repos.d
+
+- name: Create the GPG key for Percona
+  copy: src=RPM-GPG-KEY-Percona dest=/etc/pki/rpm-gpg
+
